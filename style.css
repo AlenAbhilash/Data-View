@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, #000000, rgb(89, 17, 157));
+}
+#clear {
+    position: absolute;
+    margin-bottom: 50px;
+    margin-left: 80%;
+}
+@media screen and (min-width: 320px) and (max-width: 780px) {
+    body {
+        background-image: linear-gradient(to right, #000000, rgb(89, 17, 157));
+        width: 85%;
+    }
+    #clear {
+        position: absolute;
+        top: 12%;
+        width: 150px;
+        margin-left: 25%;
+    }
+}

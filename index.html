@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="text-white fw-bold my-5 text-center">CAR WORLD</h1>
+    <button type="button" id="clear" class="btn btn-danger btn-rounded" onclick="clearall()" data-mdb-ripple-init>Clear
+        All
+        Records</button><br>
+    <div class="container ms-4">
+        <div class="row">
+            <div class="col">
+                <div class="card my-5  p-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold p-4">Enter Details</h5><br>
+                        <h6 class="fw-bold">Card Brand</h6>
+                        <input type="text" id="cbrand" class="form-control" placeholder="Card Brand"><br>
+                        <h6 class="fw-bold">Price</h6>
+                        <input type="text" id="price" class="form-control" placeholder="Price"><br>
+                        <h6 class="fw-bold">Key</h6>
+                        <input type="text" id="key" class="form-control" placeholder="Key"><br>
+                        <button type="button" onclick="store()" class="btn btn-success btn-rounded"
+                            data-mdb-ripple-init>Store Items</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card my-5  p-5 ">
+                    <div class="card-body ">
+                        <h5 class="card-title text-center fw-bold p-4">Enter Key To Retrieve Item</h5><br>
+                        <h6 class="fw-bold">Key</h6>
+                        <input type="text" name="" id="semp" class="form-control" placeholder="Key"><br>
+                        <div id="result">
+
+                        </div>
+                        <button type="button" onclick="results()" class="btn btn-primary btn-rounded"
+                            data-mdb-ripple-init>Retrive
+                            Records</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card my-5  p-5 ">
+                    <div class="card-body ">
+                        <h5 class="card-title text-center fw-bold p-4">Enter Key To Retrieve Item</h5><br>
+                        <h6 class="fw-bold">Key</h6>
+                        <input type="text" name="" id="remp" class="form-control" placeholder="Key"><br>
+                        <button type="button" onclick="remove()" class="btn btn-danger btn-rounded"
+                            data-mdb-ripple-init>Remove
+                            Redocres</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
